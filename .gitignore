@@ -1,0 +1,9 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+.DS_Store
+index.html
+index.pdf
+libs
+xaringan-bioconductor-template.Rproj
