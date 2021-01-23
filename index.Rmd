@@ -76,6 +76,14 @@ Computational Biologist
 
 ---
 
+# 2021 Fellowship Program
+
+```{r, fig.align='center'}
+knitr::include_graphics("img/ssi_logo_with_name-large.jpg")
+```
+
+---
+
 # Selected publications
 
 ```{r, include=FALSE}
