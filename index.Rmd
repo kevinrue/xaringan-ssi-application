@@ -32,6 +32,12 @@ stopifnot(require(RefManageR))
 stopifnot(require(knitr))
 ```
 
+```{r knitr, include=FALSE}
+knitr::opts_chunk$set(
+  echo = FALSE
+)
+```
+
 ```{r htmltools, include=FALSE}
 stopifnot(requireNamespace("htmltools"))
 htmltools::tagList(rmarkdown::html_dependency_font_awesome())
@@ -52,9 +58,21 @@ bib <- ReadBib("references.bib")
 
 ---
 
-# Title
+# About
 
-Content.
+```{r, fig.align='center'}
+knitr::include_graphics("img/ox_brand1_pos_rect.gif")
+```
+
+.center[
+.xx-large-p[
+Computational Biologist
+]
+
+<i class="far fa-file-code fa-7x"></i>&emsp;&emsp;&emsp;
+<i class="fas fa-database fa-7x"></i>&emsp;&emsp;&emsp;
+<i class="fas fa-chart-bar fa-7x"></i></i>
+]
 
 ---
 
