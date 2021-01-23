@@ -21,9 +21,9 @@ layout: true
 <div class="my-header"><img src="img/sticker.png" alt="logo" align="right" height="90%"></div>
 
 <div class="my-footer"><span>
-Footer left
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-Footer middle
+Kevin Rue-Albrecht
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+SSI Fellowship Application 2021
 </span></div>
 
 ```{r setup, include=FALSE}
