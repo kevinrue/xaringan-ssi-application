@@ -146,41 +146,56 @@ Using `r BiocStyle::CRANpkg("leaflet")`
 <!-- Source: https://www.subpng.com/png-3h4o8r/ -->
 
 .pull-left[
-```matlab
+
+```{matlab, echo=TRUE, eval=FALSE}
 >> fprintf 'Hello, Matlab!'
 ```
 
-```python
+```{python, echo=TRUE, eval=FALSE}
 >>> print("Hello, Python!")
 ```
 
-```r
+```{r, echo=TRUE, eval=FALSE}
 > cat("Hello, R!")
 ```
 
-```javascript
+```{javascript, echo=TRUE, eval=FALSE}
 <script>
   alert( 'Hello, JavaScript!' );
 </script>
 ```
+
 ]
 
 .pull-right[
-```sql
+```{sql, echo=TRUE, eval=FALSE}
 SELECT COUNT(*) FROM hellosql;
 ```
 
-```bash
+```{bash, echo=TRUE, eval=FALSE}
 echo "Hello, Unix!"
 ```
 
-```html
+```{html, echo=TRUE, eval=FALSE}
 <html>
   <body>
     <p>Hello, HTML!</p>
   </body>
 </html>
 ```
+]
+
+---
+
+# `r BiocStyle::Biocpkg("GOexpress")`
+
+.center[
+<img src="img/logo-bioconductor.png" height="200px" alt="Bioconductor hexsticker"></img>
+<!-- Source: https://github.com/Bioconductor/BiocStickers/tree/master/Bioconductor -->
+<img src="img/logo-goexpress.png" height="200px" alt="GOexpress hexsticker"></img>
+<!-- Source: https://github.com/Bioconductor/BiocStickers/tree/master/GOexpress -->
+
+<https://bioconductor.org/packages/iSEE/>
 ]
 
 ---
