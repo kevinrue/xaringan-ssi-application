@@ -151,19 +151,19 @@ Using `r BiocStyle::CRANpkg("leaflet")`
 
 .pull-left[
 
-```{matlab, echo=TRUE, eval=FALSE}
+```
 >> fprintf 'Hello, Matlab!'
 ```
 
-```{python, echo=TRUE, eval=FALSE}
+```
 >>> print("Hello, Python!")
 ```
 
-```{r, echo=TRUE, eval=FALSE}
+```
 > cat("Hello, R!")
 ```
 
-```{javascript, echo=TRUE, eval=FALSE}
+```
 <script>
   alert( 'Hello, JavaScript!' );
 </script>
@@ -207,12 +207,16 @@ echo "Hello, Unix!"
 # Ph.D. Research
 
 .center[
-<img src="img/article-tuberculosis.png" height="500px" alt="Bioconductor hexsticker"></img>
+<img src="img/article-tuberculosis.png" height="450px" alt="Bioconductor hexsticker"></img>
+]
+
+.right[
+<https://doi.org/10.3389/fimmu.2014.00536>
 ]
 
 ---
 
-# Continued contributions to the Bioconductor project
+# Continuing contributions to the Bioconductor project
 
 .center[
 <https://bioconductor.org/>
@@ -232,6 +236,36 @@ echo "Hello, Unix!"
 
 <https://bioconductor.org/packages/iSEEu/> (2020)
 ]
+
+---
+
+# GitHub organisation
+
+.center[
+<img src="img/github-isee-organisation.png" height="500px" alt="Bioconductor hexsticker"></img>
+]
+
+---
+
+# OBDS Training Programme
+
+Instructor
+
+- Unix and high-performance computing (HPC) environments
+
+- Conda
+
+- Git and GitHub
+
+- Python
+
+- R and Bioconductor
+
+---
+
+# Bioconductor teaching working group
+
+- Carpentries lesson
 
 ---
 
