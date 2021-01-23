@@ -91,6 +91,10 @@ li>.fab {
   color: #0092ac;
 }
 
+.leaflet {
+    margin: auto;
+}
+
 .title-slide>h1 {
     color: #c4d931;
     background-color: #0092ac;

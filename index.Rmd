@@ -4,6 +4,7 @@ subtitle: 'SSI Fellowship Application'
 author: '[<i class="fab fa-github"></i> kevinrue](https://kevinrue.github.io) [<i class="fab fa-twitter"></i> KevinRUE67](https://twitter.com/KevinRUE67) [<i class="fab fa-linkedin"></i> kevin-rue-albrecht](https://www.linkedin.com/in/kevin-rue-albrecht/)'
 institute: ''
 date: '2021-02-05 (updated: `r Sys.Date()`)'
+always_allow_html: yes
 output:
   xaringan::moon_reader:
     css: [default, metropolis, rladies-fonts, "my-theme.css"]
@@ -30,6 +31,10 @@ SSI Fellowship Application 2021
 stopifnot(require(htmltools))
 stopifnot(require(RefManageR))
 stopifnot(require(knitr))
+library(leaflet)
+library(maps)
+library(tidyverse)
+data("world.cities")
 ```
 
 ```{r knitr, include=FALSE}
@@ -41,6 +46,7 @@ knitr::opts_chunk$set(
 ```{r htmltools, include=FALSE}
 stopifnot(requireNamespace("htmltools"))
 htmltools::tagList(rmarkdown::html_dependency_font_awesome())
+options(htmltools.preserve.raw = FALSE)
 ```
 
 ```{r, load_refs, include=FALSE, cache=FALSE}
@@ -80,6 +86,39 @@ Computational Biologist
 
 ```{r, fig.align='center'}
 knitr::include_graphics("img/ssi_logo_with_name-large.jpg")
+```
+
+---
+
+# More about me
+
+Add a map using `leaflet` with a marker on my hometown.
+Perhaps also on Dublin for my PhD, and on Oxford where I am now.
+
+```{r, fig.width=8, fig.height=5, results='asis', warning=FALSE, fig.align='center'}
+strasbourg <- world.cities %>% 
+  filter(name == "Strasbourg" & country.etc == "France") %>% 
+  mutate(info = "Where I'm from")
+dublin <- world.cities %>% 
+  filter(name == "Dublin" & country.etc == "Ireland") %>% 
+  mutate(info = "Where I received my Ph.D.")
+oxford <- world.cities %>% 
+  filter(name == "Oxford" & country.etc == "UK") %>% 
+  mutate(info = "Where I work now")
+markers <- bind_rows(
+  strasbourg,
+  dublin,
+  oxford
+) %>% mutate(
+  label = sprintf("<b>%s (%s)</b><br/>%s", name, country.etc, info)
+)
+leaflet(options = leafletOptions(maxZoom = 4)) %>%
+  addProviderTiles("Stamen.Watercolor") %>%
+  # addProviderTiles("Stamen.TonerHybrid") %>% 
+  addMarkers(~long, ~lat,
+    label = ~as.character(label), data = markers) %>% 
+  addLabelOnlyMarkers(~long, ~lat, label = ~as.character(label), data = markers,
+    labelOptions = labelOptions(noHide = TRUE, direction = 'left', textOnly = TRUE))
 ```
 
 ---
