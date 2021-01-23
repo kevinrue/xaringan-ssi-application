@@ -64,7 +64,7 @@ bib <- ReadBib("references.bib")
 
 ---
 
-# About
+# About me
 
 ```{r, fig.align='center'}
 knitr::include_graphics("img/ox_brand1_pos_rect.gif")
