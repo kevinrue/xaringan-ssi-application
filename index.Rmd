@@ -96,14 +96,18 @@ knitr::include_graphics("img/ssi_logo_with_name-large.jpg")
 strasbourg <- world.cities %>% 
   filter(name == "Strasbourg" & country.etc == "France") %>% 
   mutate(info = "Where I'm from")
+nice <- world.cities %>% 
+  filter(name == "Nice" & country.etc == "France") %>% 
+  mutate(info = "Where I received<br/>my Diplôme d'Ingénieur (M.Sc.)")
 dublin <- world.cities %>% 
   filter(name == "Dublin" & country.etc == "Ireland") %>% 
-  mutate(info = "Where I received my Ph.D.")
+  mutate(info = "Where I received<br/>my Ph.D.")
 oxford <- world.cities %>% 
   filter(name == "Oxford" & country.etc == "UK") %>% 
   mutate(info = "Where I work now")
 markers <- bind_rows(
   strasbourg,
+  nice,
   dublin,
   oxford
 ) %>% mutate(
