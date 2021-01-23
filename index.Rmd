@@ -1,9 +1,9 @@
 ---
-title: 'My Bioconductor Topic'
-subtitle: 'Bioconductor Meeting YEAR'
-author: '[Author One](https://author1.github.io), [Author Two](https://author2.github.io)'
+title: 'Kevin Rue-Albrecht (Ph.D, Dipl. Ing.) <img src="img/sticker.png" alt="logo" height="120px" style="float:right">'
+subtitle: 'SSI Fellowship Application'
+author: '[<i class="fab fa-github"></i> kevinrue](https://kevinrue.github.io) [<i class="fab fa-twitter"></i> KevinRUE67](https://twitter.com/KevinRUE67) [<i class="fab fa-linkedin"></i> kevin-rue-albrecht](https://www.linkedin.com/in/kevin-rue-albrecht/)'
 institute: ''
-date: 'YYYY-MM-DD (updated: `r Sys.Date()`)'
+date: '2021-02-05 (updated: `r Sys.Date()`)'
 output:
   xaringan::moon_reader:
     css: [default, metropolis, rladies-fonts, "my-theme.css"]
@@ -43,12 +43,11 @@ BibOptions(
   check.entries = FALSE,
   bib.style = "authoryear",
   cite.style = "authoryear",
-  max.names = 2,
+  max.names = 3,
   style = "markdown",
   hyperlink = "to.doc",
   dashed = TRUE)
 bib <- ReadBib("references.bib")
-NoCite(bib, "orchestrating2015")
 ```
 
 ---
@@ -59,8 +58,18 @@ Content.
 
 ---
 
-# References
+# Selected publications
 
-```{r refs, include=TRUE, echo=FALSE, results="asis"}
+```{r, include=FALSE}
+NoCite(bib, "amezquita2020osca")
+NoCite(bib, "rue2018isee")
+NoCite(bib, "aulicino2018salmonella")
+NoCite(bib, "rue2014tuberculosis")
+# NoCite(bib, "rue2016goexpress")
+```
+
+.small-p[
+```{r refs, include=TRUE, echo=FALSE, results='asis'}
 PrintBibliography(bib)
 ```
+]
