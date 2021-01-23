@@ -1,7 +1,7 @@
 ---
-title: 'Kevin Rue-Albrecht (Ph.D, Dipl. Ing.)'
+title: 'Kevin Rue-Albrecht (Ph.D, Dipl. Ing.) <img src="img/sticker.png" alt="logo" height="120px" style="float:right">'
 subtitle: 'SSI Fellowship Application'
-author: '[Kevin Rue-Albrecht](https://kevinrue.github.io)'
+author: '[<i class="fab fa-github"></i> kevinrue](https://kevinrue.github.io) [<i class="fab fa-twitter"></i> KevinRUE67](https://twitter.com/KevinRUE67) [<i class="fab fa-linkedin"></i> kevin-rue-albrecht](https://www.linkedin.com/in/kevin-rue-albrecht/)'
 institute: ''
 date: '2021-02-05 (updated: `r Sys.Date()`)'
 output:
