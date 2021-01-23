@@ -21,4 +21,5 @@ Suggests:
     xaringan,
     leaflet,
     maps,
-    tidyverse
+    tidyverse,
+    reticulate
