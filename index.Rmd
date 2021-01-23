@@ -31,9 +31,9 @@ SSI Fellowship Application 2021
 stopifnot(require(htmltools))
 stopifnot(require(RefManageR))
 stopifnot(require(knitr))
-library(leaflet)
-library(maps)
-library(tidyverse)
+stopifnot(require(leaflet))
+stopifnot(require(maps))
+stopifnot(require(tidyverse))
 data("world.cities")
 ```
 
@@ -196,6 +196,14 @@ echo "Hello, Unix!"
 <!-- Source: https://github.com/Bioconductor/BiocStickers/tree/master/GOexpress -->
 
 <https://bioconductor.org/packages/iSEE/>
+]
+
+---
+
+# Ph.D. Research
+
+.center[
+<img src="img/article-tuberculosis.png" height="500px" alt="Bioconductor hexsticker"></img>
 ]
 
 ---
