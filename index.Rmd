@@ -69,8 +69,8 @@ knitr::include_graphics("img/ox_brand1_pos_rect.gif")
 Computational Biologist
 ]
 
+<i class="fas fa-dna fa-7x"></i>&emsp;&emsp;&emsp;
 <i class="far fa-file-code fa-7x"></i>&emsp;&emsp;&emsp;
-<i class="fas fa-database fa-7x"></i>&emsp;&emsp;&emsp;
 <i class="fas fa-chart-bar fa-7x"></i></i>
 ]
 
