@@ -250,7 +250,9 @@ echo "Hello, Unix!"
 # Most technically impressive app
 
 .center[
-<img src="img/isee-shiny-contest.png" height="450px" alt="Shiny contest logo"></img>
+<img src="img/logo-isee.png" height="300px" align="middle" alt="iSEE hexsticker"></img>
+<!-- Source: https://github.com/Bioconductor/BiocStickers/tree/master/iSEE -->
+<img src="img/isee-shiny-contest.png" height="400px" align="middle" alt="Shiny contest logo"></img>
 ]
 
 .right[
