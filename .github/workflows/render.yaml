@@ -48,6 +48,9 @@ jobs:
         run: |
           Rscript -e "remotes::install_github('r-hub/sysreqs')"
           sysreqs=$(Rscript -e "cat(sysreqs::sysreq_commands('DESCRIPTION'))")
+          echo $sysreqs
+          export DEBIAN_FRONTEND=noninteractive
+          sudo apt-get -y update
           sudo -s eval "$sysreqs"
 
       - name: Session info

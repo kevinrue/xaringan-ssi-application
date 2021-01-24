@@ -1,9 +1,10 @@
 ---
 title: 'Kevin Rue-Albrecht (Ph.D, Dipl. Ing.) <img src="img/sticker.png" alt="logo" height="120px" style="float:right">'
-subtitle: 'SSI Fellowship Application'
+subtitle: 'SSI Fellowship 2021 - Application'
 author: '[<i class="fab fa-github"></i> kevinrue](https://kevinrue.github.io) [<i class="fab fa-twitter"></i> KevinRUE67](https://twitter.com/KevinRUE67) [<i class="fab fa-linkedin"></i> kevin-rue-albrecht](https://www.linkedin.com/in/kevin-rue-albrecht/)'
 institute: ''
 date: '2021-02-05 (updated: `r Sys.Date()`)'
+always_allow_html: yes
 output:
   xaringan::moon_reader:
     css: [default, metropolis, rladies-fonts, "my-theme.css"]
@@ -30,11 +31,22 @@ SSI Fellowship Application 2021
 stopifnot(require(htmltools))
 stopifnot(require(RefManageR))
 stopifnot(require(knitr))
+stopifnot(require(leaflet))
+stopifnot(require(maps))
+stopifnot(require(tidyverse))
+data("world.cities")
+```
+
+```{r knitr, include=FALSE}
+knitr::opts_chunk$set(
+  echo = FALSE
+)
 ```
 
 ```{r htmltools, include=FALSE}
 stopifnot(requireNamespace("htmltools"))
 htmltools::tagList(rmarkdown::html_dependency_font_awesome())
+options(htmltools.preserve.raw = FALSE)
 ```
 
 ```{r, load_refs, include=FALSE, cache=FALSE}
@@ -52,9 +64,208 @@ bib <- ReadBib("references.bib")
 
 ---
 
-# Title
+# About me
 
-Content.
+```{r, fig.align='center'}
+knitr::include_graphics("img/ox_brand1_pos_rect.gif")
+```
+
+.center[
+.xx-large-p[
+Computational Biologist
+]
+
+<i class="fas fa-dna fa-7x"></i>&emsp;&emsp;&emsp;
+<i class="far fa-file-code fa-7x"></i>&emsp;&emsp;&emsp;
+<i class="fas fa-chart-bar fa-7x"></i></i>
+]
+
+---
+
+# 2021 Fellowship Program
+
+```{r, fig.align='center'}
+knitr::include_graphics("img/ssi_logo_with_name-large.jpg")
+```
+
+---
+
+# More about me
+
+```{r, fig.width=8, fig.height=6.5, fig.width=10, results='asis', warning=FALSE, fig.align='center'}
+strasbourg <- world.cities %>% 
+  filter(name == "Strasbourg" & country.etc == "France") %>% 
+  mutate(info = "Where I'm from")
+nice <- world.cities %>% 
+  filter(name == "Nice" & country.etc == "France") %>% 
+  mutate(info = "Where I received<br/>my Diplôme d'Ingénieur (M.Sc.)")
+dublin <- world.cities %>% 
+  filter(name == "Dublin" & country.etc == "Ireland") %>% 
+  mutate(info = "Where I received<br/>my Ph.D.")
+oxford <- world.cities %>% 
+  filter(name == "Oxford" & country.etc == "UK") %>% 
+  mutate(info = "Where I work now")
+markers <- bind_rows(
+  strasbourg,
+  nice,
+  dublin,
+  oxford
+) %>% mutate(
+  label = sprintf("<b>%s (%s)</b><br/>%s", name, country.etc, info)
+)
+leaflet(options = leafletOptions(minZoom = 2, maxZoom = 5)) %>%
+  addProviderTiles("Stamen.Watercolor") %>% 
+  addMarkers(~long, ~lat, data = markers) %>% 
+  addLabelOnlyMarkers(~long, ~lat, label = ~as.character(label), data = markers,
+    labelOptions = labelOptions(noHide = TRUE, direction = 'left', textOnly = TRUE, textsize = "16px"))
+```
+
+.right[
+Using `r BiocStyle::CRANpkg("leaflet")`
+]
+
+---
+
+# A bird's-eye view of my programming journey
+
+<img src="img/logo-matlab.png" height="90px" alt="Matlab logo"></img>
+<!-- Source: https://logos-world.net/matlab-logo/ -->
+&emsp;
+<img src="img/logo-python.png" height="90px" alt="Python logo"></img>
+<!-- Source: https://commons.wikimedia.org/wiki/File:JavaScript-logo.png -->
+&emsp;
+<img src="img/logo-r.png" height="90px" alt="R logo"></img>
+<!-- Source: https://www.r-project.org/logo/ -->
+&emsp;
+<img src="img/logo-JavaScript.png" height="90px" alt="JavaScript logo"></img>
+<!-- Source: https://commons.wikimedia.org/wiki/File:JavaScript-logo.png -->
+&emsp;
+<img src="img/logo-sql.png" height="90px" alt="SQL logo"></img>
+<!-- Source: https://blog.stoneriverelearning.com/6-reasons-why-you-should-learn-sql/ -->
+&emsp;
+<img src="img/logo-unix.gif" height="90px" alt="UNIX logo"></img>
+<!-- Source: http://www.unix.org/u30logo.html -->
+&emsp;
+<img src="img/logo-html.jpg" height="90px" alt="HTML logo"></img>
+<!-- Source: https://www.subpng.com/png-3h4o8r/ -->
+
+.pull-left[
+
+```
+>> fprintf 'Hello, Matlab!'
+```
+
+```
+>>> print("Hello, Python!")
+```
+
+```
+> cat("Hello, R!")
+```
+
+```
+<script>
+  alert( 'Hello, JavaScript!' );
+</script>
+```
+
+]
+
+.pull-right[
+```{sql, echo=TRUE, eval=FALSE}
+SELECT COUNT(*) FROM hellosql;
+```
+
+```{bash, echo=TRUE, eval=FALSE}
+echo "Hello, Unix!"
+```
+
+```{html, echo=TRUE, eval=FALSE}
+<html>
+  <body>
+    <p>Hello, HTML!</p>
+  </body>
+</html>
+```
+]
+
+---
+
+# GOexpress
+
+.center[
+<img src="img/logo-bioconductor.png" height="200px" alt="Bioconductor hexsticker"></img>
+<!-- Source: https://github.com/Bioconductor/BiocStickers/tree/master/Bioconductor -->
+<img src="img/logo-goexpress.png" height="200px" alt="GOexpress hexsticker"></img>
+<!-- Source: https://github.com/Bioconductor/BiocStickers/tree/master/GOexpress -->
+
+<https://bioconductor.org/packages/iSEE/>
+]
+
+---
+
+# Ph.D. Research
+
+.center[
+<img src="img/article-tuberculosis.png" height="450px" alt="Bioconductor hexsticker"></img>
+]
+
+.right[
+<https://doi.org/10.3389/fimmu.2014.00536>
+]
+
+---
+
+# Continuing contributions to the Bioconductor project
+
+.center[
+<https://bioconductor.org/>
+
+<img src="img/logo-bioconductor.png" height="200px" alt="Bioconductor hexsticker"></img>
+<!-- Source: https://github.com/Bioconductor/BiocStickers/tree/master/Bioconductor -->
+<img src="img/logo-tvtb.png" height="200px" alt="TVTB hexsticker"></img>
+<!-- Source: https://github.com/Bioconductor/BiocStickers/tree/master/TVTB -->
+<img src="img/logo-isee.png" height="200px" alt="iSEE hexsticker"></img>
+<!-- Source: https://github.com/Bioconductor/BiocStickers/tree/master/iSEE -->
+<img src="img/logo-iseeu.png" height="200px" alt="iSEEu hexsticker"></img>
+<!-- Source: https://github.com/Bioconductor/BiocStickers/tree/master/iSEEu -->
+
+<https://bioconductor.org/packages/TVTB/> (2016)
+
+<https://bioconductor.org/packages/iSEE/> (2018)
+
+<https://bioconductor.org/packages/iSEEu/> (2020)
+]
+
+---
+
+# GitHub organisation
+
+.center[
+<img src="img/github-isee-organisation.png" height="500px" alt="Bioconductor hexsticker"></img>
+]
+
+---
+
+# OBDS Training Programme
+
+Instructor
+
+- Unix and high-performance computing (HPC) environments
+
+- Conda
+
+- Git and GitHub
+
+- Python
+
+- R and Bioconductor
+
+---
+
+# Bioconductor teaching working group
+
+- Carpentries lesson
 
 ---
 

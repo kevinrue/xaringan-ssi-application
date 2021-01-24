@@ -69,6 +69,14 @@ a, a > code {
     font-size: small;
 }
 
+.x-large-p p {
+    font-size: x-large;
+}
+
+.xx-large-p p {
+    font-size: xx-large;
+}
+
 p>.fa,
 p>.fas,
 p>.far,
@@ -81,6 +89,10 @@ li>.fas,
 li>.far,
 li>.fab {
   color: #0092ac;
+}
+
+.leaflet {
+    margin: auto;
 }
 
 .title-slide>h1 {
