@@ -277,7 +277,6 @@ echo "Hello, Unix!"
 <img src="img/ox_brand1_pos_rect.gif" alt="University of Oxford logo"></img>
 ]
 
-
 .pull-left[
 ## Instructor
 
@@ -300,6 +299,14 @@ echo "Hello, Unix!"
 .right[
 [www.imm.ox.ac.uk](https://www.imm.ox.ac.uk/research/units-and-centres/mrc-wimm-centre-for-computational-biology/training/oxford-biomedical-data-science-training-programme)
 ]
+]
+
+---
+
+# Co-organiser
+
+.center[
+<img src="img/bioc2021-page.png" alt="Bioconductor conference 2021"></img>
 ]
 
 ---
