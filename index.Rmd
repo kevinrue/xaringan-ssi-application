@@ -239,19 +239,48 @@ echo "Hello, Unix!"
 
 ---
 
+# iSEE
+
+.center[
+<img src="img/isee-interface.png" height="500px" width="600px" alt="iSEE user interface"></img>
+]
+
+---
+
+# Most technically impressive app
+
+.center[
+<img src="img/isee-shiny-contest.png" height="450px" alt="Shiny contest logo"></img>
+]
+
+.right[
+<https://blog.rstudio.com/2019/04/05/first-shiny-contest-winners/>
+]
+
+---
+
 # GitHub organisation
 
 .center[
-<img src="img/github-isee-organisation.png" height="500px" alt="Bioconductor hexsticker"></img>
+<img src="img/github-isee-organisation.png" height="450px" alt="iSEE organisation on GitHub"></img>
+]
+
+.right[
+<https://github.com/iSEE>
 ]
 
 ---
 
 # OBDS Training Programme
 
-Instructor
+.center[
+<img src="img/ox_brand1_pos_rect.gif" alt="University of Oxford logo"></img>
+]
 
-- Unix and high-performance computing (HPC) environments
+.pull-left[
+## Instructor
+
+- Unix and HPC environments
 
 - Conda
 
@@ -260,6 +289,25 @@ Instructor
 - Python
 
 - R and Bioconductor
+]
+
+.pull-right[
+<br/>
+
+<img src="img/obds-page.jpg" alt="University of Oxford logo"></img>
+
+.right[
+[www.imm.ox.ac.uk](https://www.imm.ox.ac.uk/research/units-and-centres/mrc-wimm-centre-for-computational-biology/training/oxford-biomedical-data-science-training-programme)
+]
+]
+
+---
+
+# Co-organiser
+
+.center[
+<img src="img/bioc2021-page.png" alt="Bioconductor conference 2021"></img>
+]
 
 ---
 
