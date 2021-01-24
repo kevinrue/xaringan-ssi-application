@@ -303,17 +303,15 @@ echo "Hello, Unix!"
 
 ---
 
-# Co-organiser
+# Co-organiser & Contributor
 
 .center[
 <img src="img/bioc2021-page.png" alt="Bioconductor conference 2021"></img>
 ]
 
----
-
-# Bioconductor teaching working group
-
-- Carpentries lesson
+.center[
+<img src="img/logo-thecarpentries.svg" alt="The Carpentries logo"></img>
+]
 
 ---
 
