@@ -273,9 +273,15 @@ echo "Hello, Unix!"
 
 # OBDS Training Programme
 
-Instructor
+.center[
+<img src="img/ox_brand1_pos_rect.gif" alt="University of Oxford logo"></img>
+]
 
-- Unix and high-performance computing (HPC) environments
+
+.pull-left[
+## Instructor
+
+- Unix and HPC environments
 
 - Conda
 
@@ -284,6 +290,17 @@ Instructor
 - Python
 
 - R and Bioconductor
+]
+
+.pull-right[
+<br/>
+
+<img src="img/obds-page.jpg" alt="University of Oxford logo"></img>
+
+.right[
+[www.imm.ox.ac.uk](https://www.imm.ox.ac.uk/research/units-and-centres/mrc-wimm-centre-for-computational-biology/training/oxford-biomedical-data-science-training-programme)
+]
+]
 
 ---
 
