@@ -77,6 +77,14 @@ a, a > code {
     font-size: xx-large;
 }
 
+.x-large-li li {
+    font-size: x-large;
+}
+
+.xx-large-li li {
+    font-size: xx-large;
+}
+
 p>.fa,
 p>.fas,
 p>.far,
