@@ -172,15 +172,15 @@ Using `r BiocStyle::CRANpkg("leaflet")`
 ]
 
 .pull-right[
-```{sql, echo=TRUE, eval=FALSE}
+```
 SELECT COUNT(*) FROM hellosql;
 ```
 
-```{bash, echo=TRUE, eval=FALSE}
+```
 echo "Hello, Unix!"
 ```
 
-```{html, echo=TRUE, eval=FALSE}
+```
 <html>
   <body>
     <p>Hello, HTML!</p>
@@ -250,7 +250,9 @@ echo "Hello, Unix!"
 # Most technically impressive app
 
 .center[
-<img src="img/isee-shiny-contest.png" height="450px" alt="Shiny contest logo"></img>
+<img src="img/logo-isee.png" height="300px" align="middle" alt="iSEE hexsticker"></img>
+<!-- Source: https://github.com/Bioconductor/BiocStickers/tree/master/iSEE -->
+<img src="img/isee-shiny-contest.png" height="400px" align="middle" alt="Shiny contest logo"></img>
 ]
 
 .right[
@@ -303,17 +305,15 @@ echo "Hello, Unix!"
 
 ---
 
-# Co-organiser
+# Co-organiser & Contributor
 
 .center[
 <img src="img/bioc2021-page.png" alt="Bioconductor conference 2021"></img>
 ]
 
----
-
-# Bioconductor teaching working group
-
-- Carpentries lesson
+.center[
+<img src="img/logo-thecarpentries.svg" alt="The Carpentries logo"></img>
+]
 
 ---
 
@@ -324,7 +324,7 @@ NoCite(bib, "amezquita2020osca")
 NoCite(bib, "rue2018isee")
 NoCite(bib, "aulicino2018salmonella")
 NoCite(bib, "rue2014tuberculosis")
-# NoCite(bib, "rue2016goexpress")
+NoCite(bib, "rue2016goexpress")
 ```
 
 .small-p[
