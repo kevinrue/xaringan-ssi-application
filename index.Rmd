@@ -317,6 +317,20 @@ echo "Hello, Unix!"
 
 ---
 
+# My fellowship plan
+
+.center[
+<i class="fas fa-user-graduate fa-7x"></i></i>&emsp;&emsp;&emsp;
+
+<i class="fab fa-osi fa-7x"></i>&emsp;&emsp;&emsp;
+
+<i class="far fa-handshake fa-7x"></i></i></i>
+]
+
+<!-- Don't forget BiocChallenges -->
+
+---
+
 # Selected publications
 
 ```{r, include=FALSE}
