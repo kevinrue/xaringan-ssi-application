@@ -81,6 +81,10 @@ a, a > code {
     font-size: x-large;
 }
 
+.xx-large-li li {
+    font-size: xx-large;
+}
+
 p>.fa,
 p>.fas,
 p>.far,

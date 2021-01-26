@@ -23,7 +23,7 @@ layout: true
 
 <div class="my-footer"><span>
 Kevin Rue-Albrecht
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
 SSI Fellowship Application 2021
 </span></div>
 
@@ -77,7 +77,7 @@ Computational Biologist
 
 <i class="fas fa-dna fa-7x"></i>&emsp;&emsp;&emsp;
 <i class="far fa-file-code fa-7x"></i>&emsp;&emsp;&emsp;
-<i class="fas fa-chart-bar fa-7x"></i></i>
+<i class="fas fa-chart-bar fa-7x"></i>
 ]
 
 ---
@@ -199,7 +199,7 @@ echo "Hello, Unix!"
 <img src="img/logo-goexpress.png" height="200px" alt="GOexpress hexsticker"></img>
 <!-- Source: https://github.com/Bioconductor/BiocStickers/tree/master/GOexpress -->
 
-<https://bioconductor.org/packages/iSEE/>
+<https://bioconductor.org/packages/iSEE>
 ]
 
 ---
@@ -219,7 +219,7 @@ echo "Hello, Unix!"
 # Continuing contributions to the Bioconductor project
 
 .center[
-<https://bioconductor.org/>
+<https://bioconductor.org>
 
 <img src="img/logo-bioconductor.png" height="200px" alt="Bioconductor hexsticker"></img>
 <!-- Source: https://github.com/Bioconductor/BiocStickers/tree/master/Bioconductor -->
@@ -230,11 +230,11 @@ echo "Hello, Unix!"
 <img src="img/logo-iseeu.png" height="200px" alt="iSEEu hexsticker"></img>
 <!-- Source: https://github.com/Bioconductor/BiocStickers/tree/master/iSEEu -->
 
-<https://bioconductor.org/packages/TVTB/> (2016)
+<https://bioconductor.org/packages/TVTB> (2016)
 
-<https://bioconductor.org/packages/iSEE/> (2018)
+<https://bioconductor.org/packages/iSEE> (2018)
 
-<https://bioconductor.org/packages/iSEEu/> (2020)
+<https://bioconductor.org/packages/iSEEu> (2020)
 ]
 
 ---
@@ -256,7 +256,7 @@ echo "Hello, Unix!"
 ]
 
 .right[
-<https://blog.rstudio.com/2019/04/05/first-shiny-contest-winners/>
+<https://blog.rstudio.com/2019/04/05/first-shiny-contest-winners>
 ]
 
 ---
@@ -324,14 +324,14 @@ echo "Hello, Unix!"
 
 <i class="fab fa-osi fa-7x"></i>&emsp;&emsp;&emsp;
 
-<i class="far fa-handshake fa-7x"></i></i></i>
+<i class="far fa-handshake fa-7x"></i>
 ]
 
 <!-- Don't forget BiocChallenges -->
 
 ---
 
-# Local & Online events
+# 1. Local & Online events
 
 .x-large-li[
 - Thematic workshops
@@ -349,18 +349,52 @@ echo "Hello, Unix!"
 
 ---
 
-# Selected publications
+# 2. Expanding the iSEE universe
 
-```{r, include=FALSE}
-NoCite(bib, "amezquita2020osca")
-NoCite(bib, "rue2018isee")
-NoCite(bib, "aulicino2018salmonella")
-NoCite(bib, "rue2014tuberculosis")
-NoCite(bib, "rue2016goexpress")
-```
+.x-large-li[
+- New panels to support more data types
 
-.small-p[
-```{r refs, include=TRUE, echo=FALSE, results='asis'}
-PrintBibliography(bib)
-```
+  + e.g., <i class="fab fa-github"></i> <https://github.com/jgilis/iSEEtranscripts>
+
+- Online workshops
+
+  + e.g. <i class="fab fa-github"></i> <https://isee.github.io/iSEEWorkshopEuroBioc2020>
+
+- Deployment, accessibility, scalability
+]
+
+---
+
+# 3. Collaboration
+
+.x-large-li[
+- BiocChallenges <img src="img/logo-biocchallenges.png" alt="BiocChallenges logo" height="200px" align="right"></img>
+
+  + <https://kevinrue.github.io/BiocChallenges>
+]
+
+---
+
+# Fellowship: 3 goals
+
+.xx-large-p[
+<i class="fas fa-user-graduate fa-4x" aling="middle"></i></i>
+&emsp;&emsp;
+Local & Online Educational Events
+
+<i class="fab fa-osi fa-4x"></i>
+&emsp;&emsp;
+Expand the iSEE universe
+
+<i class="far fa-handshake fa-4x"></i>
+&emsp;
+Collaborate on open-source challenges
+]
+
+---
+
+# Software Sustainability Institute
+
+.center[
+<img src="img/ssi-manifesto.png" height="500px" alt="SSI manifesto"></img>
 ]
