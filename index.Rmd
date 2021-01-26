@@ -331,6 +331,24 @@ echo "Hello, Unix!"
 
 ---
 
+# Local & Online events
+
+.x-large-li[
+- Thematic workshops
+
+- Software Carpentry
+
+- DevOps (CI/CD, unit testing, GitHub Actions)
+
+- Blog posts and videos
+
+  + <i class="fab fa-github"></i> <https://kevinrue.github.io>
+  
+  + <i class="fab fa-youtube"></i> [iSEE playlist](https://www.youtube.com/playlist?list=PLOsChEX1ArWEwkPUTeQK9fhNB96LQJm5H)
+]
+
+---
+
 # Selected publications
 
 ```{r, include=FALSE}
