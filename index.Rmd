@@ -375,6 +375,10 @@ echo "Hello, Unix!"
 - BiocChallenges <img src="img/logo-biocchallenges.png" alt="BiocChallenges logo" height="200px" align="right"></img>
 
   + <https://kevinrue.github.io/BiocChallenges>
+
+- BiocSpatialChallenges
+
+  + <https://helenalc.github.io/BiocSpatialChallenges>
 ]
 
 ---
