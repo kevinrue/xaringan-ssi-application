@@ -338,7 +338,7 @@ echo "Hello, Unix!"
 
 - Software Carpentry
 
-- DevOps (CI/CD, unit testing, GitHub Actions)
+- DevOps (CI/CD, unit testing, GitHub Actions, containerisation)
 
 - Blog posts and videos
 
