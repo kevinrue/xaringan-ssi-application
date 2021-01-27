@@ -199,7 +199,7 @@ echo "Hello, Unix!"
 <img src="img/logo-goexpress.png" height="200px" alt="GOexpress hexsticker"></img>
 <!-- Source: https://github.com/Bioconductor/BiocStickers/tree/master/GOexpress -->
 
-<https://bioconductor.org/packages/iSEE>
+<https://bioconductor.org/packages/GOexpress>
 ]
 
 ---
@@ -239,7 +239,7 @@ echo "Hello, Unix!"
 
 ---
 
-# iSEE
+# iSEE - Interactive SummarizedExperiment Explorer
 
 .center[
 <img src="img/isee-interface.png" height="500px" width="600px" alt="iSEE user interface"></img>
