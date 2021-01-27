@@ -360,6 +360,10 @@ echo "Hello, Unix!"
 
   + e.g. <i class="fab fa-github"></i> <https://isee.github.io/iSEEWorkshopEuroBioc2020>
 
+- iSEE book
+
+  + <https://isee.github.io/iSEE-book>
+
 - Deployment, accessibility, scalability
 ]
 
