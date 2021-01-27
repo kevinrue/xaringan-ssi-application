@@ -405,4 +405,14 @@ Collaborate on open-source challenges
 
 .center[
 <img src="img/ssi-manifesto.png" height="500px" alt="SSI manifesto"></img>
+<!-- Source: https://www.software.ac.uk/about/manifesto -->
+]
+
+---
+
+# We are all standing on the shoulders of giants
+
+.center[
+<img src="img/hexsticker-wall.jpg" height="500px" alt="useR hexsticker wall"></img>
+<!-- Source: https://www.mitchelloharawild.com/blog/user-2018-feature-wall/ -->
 ]
